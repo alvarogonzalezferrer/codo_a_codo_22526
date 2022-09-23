@@ -6,54 +6,53 @@
 	<style>
 	/* mover esto a un archivo separado! */
 	body {
-	  font-family: Arial, Helvetica, sans-serif;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 
 	.topnav {
-	  overflow: hidden;
-	  background-color: black;
-	  position: relative;
+		overflow: hidden;
+		background-color: black;
+		position: relative;
 	}
 
 	/* empiezo con el menu oculto */
 	.topnav #miMenu {
-	  display: none;
+		display: none;
 	}
 
 	.topnav a {
-	  color: white;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 17px;
-	  
-	  
-	     display: flex;
-   align-items:center;
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+
+		display: flex;
+		align-items:center;
 	}
 
 	.topnav a.icon {
-	  background: black;
-	  display: block;
-	  position: absolute;
-	  right: 0;
-	  top: 0;
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 
 	.topnav a:hover {
-	  background-color: orange;
-	  color: white;
+		background-color: orange;
+		color: white;
 	}
 
 	.active {
-	  background-color: red;
-	  color: white;
+		background-color: red;
+		color: white;
 	}
 	</style>
 </head>
 <body>
 
 <!-- Menu superior -->
-<div class="topnav">
+<nav class="topnav" id="main-navigation">
 
 	<a href="#home" class="active" style="vertical-align: middle;"><img src="img/burga_logo.png" alt="Burga">&nbsp; &nbsp; Mister Burger</a>
 
@@ -69,15 +68,14 @@
 	<a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
 		<i class="fa fa-bars"></i>
 	</a>
-</div>
+</nav>
 
 <!-- Contenido -->
 
 
 <div style="padding-left:16px">
-	<h1>Burga del Nono</h1>
-	<h2>Burgas dulces y saladas</h2>
-	<h3>Bienvenido</h3>
+	<h1>Hamburguesas</h1>
+	<h2>Bienvenidos!</h2>
   
 	<p>El secreto de una buena Burga esta en su masa crocante, esponjosa, amasada con las propias manos de nuestro maestro hamburguesero.
 	<img src="img/Burga_grande.png" alt="Comete esta Burga! Grande y jugosa!">
