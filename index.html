@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-/* mover esto a un archivo separado! */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	/* mover esto a un archivo separado! */
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
 
-.topnav {
-  overflow: hidden;
-  background-color: black;
-  position: relative;
-}
+	.topnav {
+	  overflow: hidden;
+	  background-color: black;
+	  position: relative;
+	}
 
-/* empiezo con el menu oculto */
-.topnav #miMenu {
-  display: none;
-}
+	/* empiezo con el menu oculto */
+	.topnav #miMenu {
+	  display: none;
+	}
 
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+	.topnav a {
+	  color: white;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  
+	  
+	     display: flex;
+   align-items:center;
+	}
 
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+	.topnav a.icon {
+	  background: black;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
 
-.topnav a:hover {
-  background-color: white;
-  color: black;
-}
+	.topnav a:hover {
+	  background-color: orange;
+	  color: white;
+	}
 
-.active {
-  background-color: red;
-  color: white;
-}
-</style>
+	.active {
+	  background-color: red;
+	  color: white;
+	}
+	</style>
 </head>
 <body>
 
 <!-- Menu superior -->
 <div class="topnav">
-  
-  <a href="#home" class="active"><img src="img/pastafrola_logo.png" alt="Pastafrula">&nbsp; &nbsp; Pastafrola para todes</a>
-  
-  <div id="miMenu">
-    <a href="#menu">Menu</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#nosotros">Nosotros</a>
-	<a href="#ubicacion">Ubicacion</a>
-	<a href="#pedidos">Pedidos</a>
-	<a href="#trabajos">Trabajos</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
-    <i class="fa fa-bars"></i>
-  </a>
+
+	<a href="#home" class="active" style="vertical-align: middle;"><img src="img/burga_logo.png" alt="Burga">&nbsp; &nbsp; Mister Burger</a>
+
+	<div id="miMenu">
+		<a href="#menu">Menu</a>
+		<a href="#contacto">Contacto</a>
+		<a href="#nosotros">Nosotros</a>
+		<a href="#ubicacion">Ubicacion</a>
+		<a href="#pedidos">Pedidos</a>
+		<a href="#trabajos">Trabajos</a>
+	</div>
+	
+	<a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
+		<i class="fa fa-bars"></i>
+	</a>
 </div>
 
 <!-- Contenido -->
 
 
 <div style="padding-left:16px">
-  <h1>Pastafrola del Nono</h1>
-  <h2>Pastafrolas dulces y saladas</h2>
-  <h3>Bienvenido</h3>
+	<h1>Burga del Nono</h1>
+	<h2>Burgas dulces y saladas</h2>
+	<h3>Bienvenido</h3>
   
-  <p>El secreto de una buena pastafrola esta en su masa crocante, esponjosa, amasada con las propias manos de nuestro maestro pastafrolero.
-  <img src="img/pastafrola_grande.png" alt="Comete esta pastafrola! Grande y jugosa!">
-  </p>
-  <p>La receta de pastafrola original consiste en una masa de tarta esponjosa, rellena con dulce de membrillo derretido y decorada con unas tiras de masa. Pero un día, a alguien se le ocurrió ponerle dulce de batata en vez de dulce de membrillo, y así comenzó la batalla que divide a las masas en la región: batata o membrillo.</p>
-  <p>Para los que no saben, la pastafrola o pasta frola es una delicia argentina (también la compartimos con Paraguay y Uruguay) ideal para la hora el mate o para la merienda. Y por qué no para el desayuno también? La verdad que es un golazo a cualquier hora.</p>
-  
-  <p>Aca van los logos de Pedidos Ya, Rappi, Uber Eats, Glovo, Didi, etc</p>
+	<p>El secreto de una buena Burga esta en su masa crocante, esponjosa, amasada con las propias manos de nuestro maestro hamburguesero.
+	<img src="img/Burga_grande.png" alt="Comete esta Burga! Grande y jugosa!">
+	</p>
+	<p>Hasta hace no demasiado, cuando nos referíamos a las hamburguesas las asociábamos en seguida con la llamada comida basura. Pensando que estarían elaboradas sabe Dios con qué carne y con qué más que seguro no lo era.</p>
+
+	<p>Hoy en día existe una tendencia a preparar este tipo de comida manteniendo la calidad y el buen hacer. Es habitual encontrarnos este tipo de recetas de carne en la carta de cualquier restaurante. La mayoría de las veces con un apartado dedicado a este tipo de comida, pudiendo encontrarnos hamburguesas de auténtico gourmet. </p>
+
+	<p>Las hamburguesas se han convertido en un plato tan polivalente que, ¡oh sorpresa!, ni siquiera tienen por qué ser de carne, por supuesto, pueden ser de pescado o como en este caso, vegetarianas.</p>
+
+	<p>La receta de hoy es una más, pero de rechupete, la que preparamos en casa desde hace años y que han probado un montón de invitados/as llegando a decir que es de las mejores que han entrado por su boca. Así que tenéis la oportunidad de hacerla en casa y ya nada nos impide preparar en casa unas hamburguesas de categoría.</p>
+
+	<p>Unas burguers que harán que volvamos a disfrutar de este tipo de comida, por eso y como muestra, esta hamburguesa de ternera con cebolla confitada.</p>
+
+	<br>
+	<br>
+	<br>
+	<p>Aca van los logos de Pedidos Ya, Rappi, Uber Eats, Glovo, Didi, etc</p>
   
 </div>
 
