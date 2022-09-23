@@ -54,6 +54,7 @@
 <!-- Menu superior -->
 <nav class="topnav" id="main-navigation">
 
+	<!-- menu en si -->
 	<a href="#home" class="active" style="vertical-align: middle;"><img src="img/burga_logo.png" alt="Burga">&nbsp; &nbsp; Mister Burger</a>
 
 	<div id="miMenu">
@@ -65,21 +66,24 @@
 		<a href="#trabajos">Trabajos</a>
 	</div>
 	
+	<!-- menu boton para abrir -->
 	<a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
 		<i class="fa fa-bars"></i>
 	</a>
+	
 </nav>
 
 <!-- Contenido -->
 
 
-<div style="padding-left:16px">
+<main style="padding-left:16px" id="main-content">
 	<h1>Hamburguesas</h1>
 	<h2>Bienvenidos!</h2>
   
 	<p>El secreto de una buena Burga esta en su masa crocante, esponjosa, amasada con las propias manos de nuestro maestro hamburguesero.
 	<img src="img/Burga_grande.png" alt="Comete esta Burga! Grande y jugosa!">
 	</p>
+	
 	<p>Hasta hace no demasiado, cuando nos referíamos a las hamburguesas las asociábamos en seguida con la llamada comida basura. Pensando que estarían elaboradas sabe Dios con qué carne y con qué más que seguro no lo era.</p>
 
 	<p>Hoy en día existe una tendencia a preparar este tipo de comida manteniendo la calidad y el buen hacer. Es habitual encontrarnos este tipo de recetas de carne en la carta de cualquier restaurante. La mayoría de las veces con un apartado dedicado a este tipo de comida, pudiendo encontrarnos hamburguesas de auténtico gourmet. </p>
@@ -93,14 +97,18 @@
 	<br>
 	<br>
 	<br>
+	
+	
+</main>
+
+<!-- pie de pagina -->
+<footer style="padding-left:16px" id="footer">
 	<p>Aca van los logos de Pedidos Ya, Rappi, Uber Eats, Glovo, Didi, etc</p>
-  
-</div>
-
-
+</footer>
 
 <script>
 // mover esto a otro archivo !!
+// sirve para mostrar u ocultar el menu
 function mostrarMenu() {
   var x = document.getElementById("miMenu");
   if (x.style.display === "block") {
