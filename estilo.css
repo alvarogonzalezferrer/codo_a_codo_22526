@@ -1,0 +1,43 @@
+/* estilo de la pagina */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: black;
+	position: relative;
+}
+
+/* empiezo con el menu oculto */
+.topnav #miMenu {
+	display: none;
+}
+
+.topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+
+	display: flex;
+	align-items:center;
+}
+
+.topnav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.topnav a:hover {
+	background-color: orange;
+	color: white;
+}
+
+.active {
+	background-color: red;
+	color: white;
+}
