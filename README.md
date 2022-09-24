@@ -1,7 +1,8 @@
 # Codo a Codo Comision 22526 
+
 ## Ejercicio Grupal
 
-Avanzando con el menu hamburguesa.
+Website de cadena de hamburguesas ficticia.
 
 ## Ver el website
 
