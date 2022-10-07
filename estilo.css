@@ -1,6 +1,9 @@
 /* estilo de la pagina */
 body {
 	font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 .topnav {
@@ -40,4 +43,124 @@ body {
 .active {
 	background-color: red;
 	color: white;
+}
+h1{
+	text-align: center;
+}
+/*Menu Hamburguesas*/
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /*width: 100%;
+    display:flex;
+    max-width:1100px;*/
+}
+.container .tarjetas{
+    width: 100%;
+    margin: 20px;
+    border-radius:6px;
+    overflow:hidden;background-color: red;
+    box-shadow: 0px 1px 10 px rgba(0,0,0);
+}
+.tarjetas:hover{
+    box-shadow:5px 5px 20px rgba(0,0,0); 
+    transform: translateY(-3%);
+}
+.container .tarjetas img{
+    width:100%;
+    height: 300px;
+}
+
+ .tarjetas .contenido{
+    padding:15px;
+    text-align:center;
+}
+.tarjetas .contenido p{
+    line-height: 1.5;
+    color: white;
+}
+.tarjetas .contenido h3{
+    margin-bottom: 15px;
+    color:white;
+}
+.tarjetas .contenido a{
+    display:block;
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+    transition: all 300ms ease;
+}
+.tarjetas .contenido a:hover{
+    color:orange
+}
+
+/*seccion pie */
+#pie-pagina{
+    width:100%;
+    background-color:red;
+
+}
+#pie-pagina .fila{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding:14px 0;
+}
+#pie-pagina .fila .col{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:block; 
+}
+#pie-pagina .fila .col h2{
+    color:white;
+    margin-bottom:10px;
+    font-size:20px;
+    margin:10px 0;
+    
+}
+#pie-pagina .fila .col a{
+    display:block;
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+    transition: all 300ms ease;
+}
+#pie-pagina .fila .col a:hover{
+    color:orange
+}
+
+#pie-pagina .fila .col .redes i{
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    color: red;
+    background-color:white;
+    margin-right: 10px; 
+    transition: all 300ms ease;
+    text-align: center;
+}
+#pie-pagina .fila .col .redes i:hover{
+    color: orange;
+}
+#pie-pagina .copyright{
+    text-align:center;
+    color:white;
+    font-size: 14px;
+}
+@media screen and (max-width:800px){
+    #pie-pagina .fila{
+        width:75%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+        
+    }
 }
