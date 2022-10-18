@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
+    <title>Menú</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 	<link rel="stylesheet" href="font-awesome.min.css">
 	<link rel="stylesheet" href="estilo.css">
 	<script src="funcionalidad.js"></script>
 </head>
 <body>
-    <!-- Menu superior -->
+
+<!-- Menu superior -->
 <nav class="topnav" id="menu-principal">
 
 	<!-- menu en si -->
 	<a href="#home" class="active" style="vertical-align: middle;"><img src="img/burga_logo.png" alt="Burga">&nbsp; &nbsp; <h1> Mister Burger</h1></a>
 
 	<div id="miMenu">
-		<a href="#menu">Menú</a>
-		<a href="index.html#pedidos">Pedidos</a>
-		<a href="index.html#contacto">Contacto</a>
-		<a href="index.html#ubicacion">Ubicación</a>
-		<a href="index.html#trabajos">Trabajos</a>
+		<a href="index.html">Bienvenido</a>
+		<a href="menu.html#menu">Menú</a>
+		<a href="pedidos.html#pedidos">Pedidos</a>
+		<a href="contacto.html#contacto">Contacto</a>
+		<a href="ubicacion.html#ubicacion">Ubicación</a>
+		<a href="trabajos.html#trabajos">Trabajos</a>
 	</div>
 	
 	<!-- menu boton para abrir -->
 	<a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
 		<img src="img/menu_icon.png" alt="Menu">
 	</a>
-	
 </nav>
+
+
 <!--seccion productos-->
-<div class="container">
+<div class="container" id="menu">
     <div class="tarjetas">
         <figure>
             <img src="img/hamburguesa-picante.jpg" alt="">
@@ -119,19 +122,18 @@
 </div>
 
 
-
+<!--  pie de pagina-->
 <footer id="pie-pagina">
 	<div class="fila">
 
 	    <div class="col">
-			<a href="#menu-principal">Menú</a>
-			<a href="index.html#pedidos">Pedidos</a>
-			<a href="index.html#ubicacion">Ubicación</a>
+			<a href="menu.html#menu">Menú</a>
+			<a href="pedidos.html#pedidos">Pedidos</a>
+			<a href="contacto.html#contacto">Contacto</a>
         </div>
 		<div class="col">
-			<a href="index.html#contacto">Contacto</a>
-			
-			<a href="#index.htmltrabajos">Trabajos</a>
+			<a href="ubicacion.html#ubicacion">Ubicación</a>
+			<a href="trabajos.html#trabajos">Trabajos</a>
         </div>
         
 		<div class="col"> 
@@ -149,5 +151,6 @@
 
 	</div>
 </footer>
+
 </body>
 </html>
