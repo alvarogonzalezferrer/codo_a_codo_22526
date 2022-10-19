@@ -1,1 +1,3 @@
 https://criptoya.com/api/dolar
+
+podemos usar la API para actualizar el precio de la hamburguesa de acuerdo al dolar 
