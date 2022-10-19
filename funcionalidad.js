@@ -50,12 +50,12 @@ function dolar_hamburgesa()
 		//console.log("-- Dolar hamburguesa --");
 		//console.log(data); ; // valores del dólar variados, mep, blue, etc
 		
-		var blue = parseFloat(data.blue); // dólar blue 
+		var blue = Math.ceil(parseFloat(data.blue)); // dólar blue , redondeado para arriba
 		
 		//console.log("Blue:" + blue); // el precio que me interesa
 		
 		// poner cotizacion de hoy 
-		document.getElementById("dolarBurgaCotizacion").innerHTML = "Dólar hamburguesa hoy: " + blue + " pesos argentinos.";
+		document.getElementById("dolarBurgaCotizacion").innerHTML = "Dólar hamburguesa hoy: " + Number(blue).toFixed(2) + " pesos argentinos.";
 		
 		// cambiar precios
 		// ejemplo de: https://stackoverflow.com/questions/5338716/get-multiple-elements-by-id
@@ -64,12 +64,13 @@ function dolar_hamburgesa()
 		for(var i = 0; i < elementos.length; i++) 
 		{	
 			//console.log(elementos[i].title); // precio en dolares pre cargado
-			var precioARS = parseFloat(elementos[i].title) * blue; // precio en dolares * cotizacion blue
-			//console.log(precioARS);
 			
+			var precioARS = parseFloat(elementos[i].title) * blue; // precio en dolares * cotizacion blue
 			precioARS = Math.ceil(precioARS)// como soy argento garca, redondedo para arriba
 			
-			elementos[i].innerHTML = "$ " + precioARS + " pesos (USD " + elementos[i].title + ")" ;
+			//console.log(precioARS);
+			
+			elementos[i].innerHTML = "$ " + precioARS + " pesos (USD " + Number(elementos[i].title).toFixed(2) + ")" ;
 		}		
 	});
 
