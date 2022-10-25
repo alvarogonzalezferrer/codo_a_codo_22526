@@ -47,32 +47,35 @@ body {
 h1{
 	text-align: center;
 }
+
+main{
+    width:90%;
+    max-width: 100%;
+    margin: 25px auto;
+    padding: 10px 40px;
+    border:2px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px goldenrod; 
+
+}
 /*--- Menu Hamburguesas ---*/
 .container{
+    width:100%;
+    max-width:90%px;
    
-   /* display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;*/
-	
-    width: 100%;
-    display:flex;
-    
-	/*max-width:640px;*/
-	
-	flex-wrap: wrap;
-	justify-content: center;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:20px;
+
 }
 
 .container .tarjetas{
 	flex: 50%;
-	
 	text-align: center;
-	
-    width: 100%;
-    margin: 20px;
+    width:100%;
+    margin:10px;
     border-radius:6px;
-    
-	/*overflow:hidden;*/
+	overflow:hidden;
 	
 	background-color: red;
     box-shadow: 0px 1px 10 px rgba(0,0,0);
@@ -86,8 +89,8 @@ h1{
 .container .tarjetas img{
 	vertical-align: middle;
     width: 90%;
-    
-	/*height: 300px;*/
+    height:90%;
+    margin-top: 15px;
 }
 
 .tarjetas .contenido {
@@ -116,6 +119,194 @@ h1{
     color:orange
 }
 
+/* -------Estilo contacto-------*/
+
+/*----Informacion de Contacto---*/
+.informacion{
+    width: 100%;
+    margin: 25px auto;
+    display:grid;
+    grid-template-columns:repeat( 2, 2fr);
+    max-width: 1200px;
+    grid-gap:10px;
+    padding:14px 0;
+    
+}
+.inf_empresa::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top:0;
+    left:0;
+
+    background:red;
+    opacity: 0.5;
+}
+
+.inf_empresa{
+    width:2fr;
+    position: relative;
+
+    background-image: url("../codo_a_codo_22526/img/h4.jpg");
+    background-size: cover;
+    background-position:center center;
+   
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+.inf_titulo,
+.info_items{
+    position: relative;
+    z-index:2;
+    color:white;
+}
+.inf_titulo{
+    margin-bottom:60px;
+
+}
+.inf_titulo span{
+    font-size:100px;
+    display: block;
+    text-align: center;
+    margin-bottom:15px;
+    margin: 25px auto;
+}
+.info_items p{
+    display:flex;
+    align-items: center;
+
+    font-size:16px;
+    font-weight:600;
+    margin-bottom: 15px;
+
+}
+/*----- formulario de contacto----*/
+form .formulario{
+   width:62%;
+   padding: 30px 40px;
+
+}
+form .formulario h2{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom:30px;
+   
+}
+.formulario_grupo{
+    display:flex;
+    flex-direction:column;
+    margin-left: 20px;
+}
+.formulario_label{
+    display:block;
+    padding: 10px 0;
+
+}
+.formulario_grupo-input{
+    position: relative;
+}
+.formulario_input{
+    width:90%;
+    border-bottom: 2px solid red;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    font-size:17px;
+    outline: none;
+    line-height:45px;
+    padding: 0 10px;
+    transition: all 1s;
+}
+
+.formulario_input:focus{
+    box-shadow: 0 0 5px red;
+}
+.formulario_validacion-estado{
+    position:absolute;
+    right:45px;
+    bottom:15px;
+    font-size: 16px;
+    opacity:0; 
+    z-index: 1000;
+}
+.formulario_input-error{
+    display: none;
+    margin-bottom:0;
+   
+}
+.formulario_input-error-activo{
+    display:block
+}
+
+.formulario_span{
+    font-size:1.1em;
+    font-weight :100;
+}
+.formulario_checkbox{
+    cursor:pointer;
+    height:15px;
+    width:15px;
+    margin: 0 10px;
+}
+.formulario_mensaje{
+    display:none;
+    padding: 15px;
+    text-align:center;
+    background: red;
+    border-radius: 10px;
+}
+.formulario_mensaje-activo, .formulario_mensaje-exitoso-activo, .formulario_input-error-activo {
+    display:block
+}
+.formulario_grupo-btn-enviar{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.formulario_btn{
+    padding:15px 35px;
+    background:red;
+    color:  #fff;
+    border:none;
+    border-radius:10px;
+    cursor: pointer;
+
+}
+.formulario_btn:hover{
+    background:orange;
+    transition: all 0.5s;
+    
+}
+.formulario_mensaje-exitoso{
+    display:none;
+    font-size:2em;
+    padding:10px 0;
+    text-align:center;
+}
+/*---------Validacion---*/
+.formulario_grupo-correcto .formulario_validacion-estado{
+    color: green;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_label{
+    color:red;
+
+}
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+    color:red;
+    opacity: 1;
+
+}
+.formularioo_grupo-incorrecto .formulario_input{
+    border: 1px solid red;
+}
+/*---------Responsivo---*/
+
+
 /*--- Seccion  pie ---*/
 #pie-pagina{
     width:100%;
@@ -126,8 +317,9 @@ h1{
 #pie-pagina .fila{
     width:100%;
     max-width: 1200px;
-    margin: 15px;
+    margin: 15px auto;
     display:grid;
+    place-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding:14px 0;
@@ -136,10 +328,9 @@ h1{
 #pie-pagina .fila .col{
     width:100%;
     height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display:block; 
+    display:grid;
+    place-content: center;
+    
 }
 
 #pie-pagina .fila .col h2{
@@ -183,13 +374,33 @@ h1{
     color:white;
     font-size: 14px;
 }
+/*---------Responsivo---*/
 
-@media screen and (max-width:800px){
+
+@media screen and (max-width:720px){
+
+    #menu .container{
+        width:100%;
+        grid-template-columns:1fr;
+        place-content: center;
+        padding: 25px 0;
+        
+    
+
+    }
+    #contacto .informacion{
+        width:100%;
+        grid-template-columns:1fr;
+        
+    }
+
+   
     #pie-pagina .fila{
-        width:75%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0;
+        width:100%;
+        grid-template-columns:1fr;
+        place-content: center;
+        padding: 25px 0;
+        
         
     }
 }

@@ -5,35 +5,122 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 	<link rel="stylesheet" href="font-awesome.min.css">
 	<link rel="stylesheet" href="estilo.css">
-	<script src="funcionalidad.js"></script> 
+	<script src="https://kit.fontawesome.com/73f851add2.js"></script>"
+	
 </head>
 <body>
-
-<!-- Menu superior -->
-<nav class="topnav" id="menu-principal">
-
-	<!-- menu en si -->
-	<a href="#contacto" class="active" style="vertical-align: middle;"><img src="img/burga_logo.png" alt="Burga">&nbsp; &nbsp; <h1> Mister Burger</h1></a>
-
-	<div id="miMenu">
-		<a href="index.html#home">Bienvenido</a>
-		<a href="menu.html#menu">Menú</a>
-		<a href="pedidos.html#pedidos">Pedidos</a>
-		<a href="contacto.html#contacto">Contacto</a>
-		<a href="ubicacion.html#ubicacion">Ubicación</a>
-		<a href="trabajos.html#trabajos">Trabajos</a>
-	</div>
-	
-	<!-- menu boton para abrir -->
-	<a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
-		<img src="img/menu_icon.png" alt="Menu">
-	</a>
-</nav>
+	<header>
+		<!-- Menu superior -->
+		<nav class="topnav" id="menu-principal">
+			<!-- menu en si -->
+			<a href="#contacto" class="active" style="vertical-align: middle;"><img src="img/burga_logo.png" alt="Burga">&nbsp; &nbsp; <h1> Mister Burger</h1></a>
+			<div id="miMenu">
+				<a href="index.html#home">Bienvenido</a>
+				<a href="menu.html#menu">Menú</a>
+				<a href="pedidos.html#pedidos">Pedidos</a>
+				<a href="contacto.html#contacto">Contacto</a>
+				<a href="ubicacion.html#ubicacion">Ubicación</a><a href="trabajos.html#trabajos">Trabajos</a>
+			</div>
+			<!--menu boton para abrir -->
+			<a href="javascript:void(0);" class="icon" onclick="mostrarMenu()">
+				<img src="img/menu_icon.png" alt="Menu">
+			</a>
+		</nav>
+	</header>
 
 
  <!-- contacto -->
-<address style="padding-left:16px" id="contacto">
-	<h1>Contactá con nosotros</h1>
+ <main>
+	<h1>Contactános</h1>
+	
+	<address style="padding-left:16px" id="contacto">
+	<section class="informacion" id="informacion">
+		<section class="inf_empresa">
+			<section class="inf_titulo">
+				<span class="fa-solid fa-circle-user"></span>
+				<h2>Informacion <br> de Contacto</h2>
+			</section>	
+			<section class="info_items">
+				<p><span class="fa-solid fa-envelope"></span>contact.hamburger@gmail.com</p> 
+				<p><span class="fa-solid fa-phone"></span>+911 2588746</p> 
+			</section>
+		</section>
+		<!---formulario-->
+		<form action="#" class="formulario" id="formulario">
+			<h2> Tus sugerencias nos Ayudan a ser Mejores</h2>
+			<!--grupo nombre y apellido-->
+			<div class="formulario_grupo" id="grupo_nombre">
+				<label  class="formulario_label">Nombre y Apellido</label>
+				<div class="formulario_grupo-input">
+					<input  type="text" class="formulario_input" name="nombre" id="nombre">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error"> Debe tener minimo 6 caracteres y solo admite letras </p>
+				
+			</div>
+
+			<!---grupo email-->
+			<div class="formulario_grupo" id="grupo_email">
+				<label  class="formulario_label">Email</label>
+				<div class="formulario_grupo-input">
+					<input type="email"  class="formulario_input" name="email" id="email" placeholder="correo@codo.com">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error">El correo debe tener minimo 6 caracteres y solo admite letras,numeros,y guion bajo </p>
+				
+			</div>
+
+			<!--grupo telefono-->
+			<div class="formulario_grupo" id="grupo__telefono">
+				<label  class="formulario_label">Telefono de Contacto</label>
+				<div class="formulario_grupo-input">
+					<input type="telefono"  class="formulario_input" name="telefono" id="telefono" placeholder="0123456789">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error">El numero tiene que tener 10 digitos </p>
+				
+			</div>
+			<!--grupo sucursal-->
+            <div class="formulario_grupo" id="grupo_sucursal">
+				<label  class="formulario_label">Sucursal de la compra</label>
+				<div class="formulario_grupo-input">
+					<input type="text"  class="formulario_input" name="sucursal" id="sucursal" >
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				
+				
+			</div>
+			<!--grupo mensaje-->
+			<div class="formulario_grupo"id= "grupo_comentario">
+				<label  class="formulario_label">Comentario</label>
+				<div class="formulario_grupo-input">
+					<textarea class="formulario_input" id="comentario"></textarea>
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				
+			</div>
+			<!--terminos y condiciones-->
+            <div class="formulario_grupo formulario_grupos-terminos" id="formulario_terminos">
+				<label  class="formulario_label">
+					<input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+					<b class="formulario_span"> Acepto los terminos y condiciones</b>
+				</label>
+				<!--grupo mensaje campos requeridos-->
+			<div class="formulario_mensaje"id= "formulario_mensaje">
+				<i class="fas fa-exclamation-circle"><b>Error:</b> Debes Completar todos los campos</i>
+				
+			</div>
+			
+				<!--Eviar-->
+				<div class="formulario_grupo formulario_grupo-btn-enviar">
+				<p class="formulario_mensaje-exitoso" id=" formulario_mensaje-exitoso"> El mensaje se envio correctamente</p>
+				<input class="formulario_btn" type="submit" value="Enviar">
+				</div>
+		   
+		</form>
+	</section>	
+</main>
+	<!--<h1>Contactá con nosotros</h1>
 	<ul>
 		<li>¿Intimación judicial?</li>
 
@@ -67,7 +154,7 @@
 </address>
 
 
-<!--  pie de pagina-->
+<!--pie de pagina-->
 <footer id="pie-pagina">
 	<div class="fila">
 
@@ -96,6 +183,7 @@
 
 	</div>
 </footer>
-	
+<script src="funcionalidad.js"></script> 	
 </body>
+
 </html>
